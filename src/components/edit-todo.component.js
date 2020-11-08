@@ -17,7 +17,7 @@ export default class EditTodo extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5000/todos/" + this.props.match.params.id)
+      .get("/todos/" + this.props.match.params.id)
       .then((response) => {
         this.setState({
           title: response.data.title,
@@ -56,10 +56,7 @@ export default class EditTodo extends Component {
     };
 
     axios
-      .post(
-        "http://localhost:5000/todos/update/" + this.props.match.params.id,
-        todo
-      )
+      .post("/todos/update/" + this.props.match.params.id, todo)
       .then((res) => console.log(res.data));
 
     window.location = "/";

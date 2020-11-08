@@ -32,9 +32,7 @@ export default class CreateTodo extends Component {
 
     console.log(todo);
 
-    axios
-      .post("http://localhost:5000/todos/add", todo)
-      .then((res) => console.log(res.data));
+    axios.post("/todos/add", todo).then((res) => console.log(res.data));
 
     window.location = "/";
   }

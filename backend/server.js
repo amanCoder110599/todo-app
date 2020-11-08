@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const expressip = require("express-ip");
+const path = require("path");
 require("dotenv").config();
 
 const app = express();
@@ -22,6 +23,11 @@ connection.once("open", () => {
 const todosRouter = require("./routes/todos");
 
 app.use("/todos", todosRouter);
+app.use(express.static(path.join(__dirname, "build")));
+
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
