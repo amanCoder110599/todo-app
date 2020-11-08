@@ -12,8 +12,8 @@ app.use(cors());
 app.use(express.json());
 app.use(expressip().getIpInfoMiddleware);
 
-const uri =
-  "mongodb+srv://schools:GC00eB1WtiM34a6D@schools.l9qgr.mongodb.net/<dbname7>?retryWrites=true&w=majority";
+//Add your MongoDB ATLAS_URI
+const uri = "<Paste>";
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true });
 const connection = mongoose.connection;
 connection.once("open", () => {
