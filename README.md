@@ -4,7 +4,7 @@
 
 ### Backend Sever
 
-1. Open server.js file and replace the MongoDB URI with your MongoDB uri in line 14 then follow below steps in terminal
+1. Open server.js file and replace the MongoDB URI with your MongoDB uri in line 16 then follow below steps in terminal
 
 ```bash
 cd backend
