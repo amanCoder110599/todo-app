@@ -20,8 +20,4 @@ nodemon server.js
    npm install
    npm start
    ```
-
-```
-
 2. To view the application go to localhost:3000
-```
