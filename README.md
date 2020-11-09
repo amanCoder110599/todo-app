@@ -1,6 +1,6 @@
 # todo-app
 
-## Instalation
+## Installation
 
 ### Backend Sever
 
