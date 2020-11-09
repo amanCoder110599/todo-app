@@ -12,7 +12,7 @@ npm install
 nodemon server.js
 ```
 
-2. To view the application go to localhost:5000
+2. The backend server is active on PORT 5000.
 
 ### Frontend
 
@@ -20,4 +20,4 @@ nodemon server.js
    npm install
    npm start
    ```
-2. To view the application go to localhost:3000
+2. To view the application go to PORT 3000
